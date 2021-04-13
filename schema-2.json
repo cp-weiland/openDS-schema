@@ -10,15 +10,12 @@
         },
         "typeName": {
             "type": "string",
-            "const": [
-                "ODStype1802"
-            ]
+            "const": "ODStype1802"
         },
         "authoritative": {
             "$id": "#/properties/a_section",
             "type": "object",
             "properties": {
-                "$comment": "authoritative properties here; list mandatory ones as required (below)"
             },
             "required": []
         },
@@ -26,7 +23,6 @@
             "$id": "#/properties/i_section",
             "type": "object",
             "properties": {
-                "$comment": "image properties here; list mandatory ones as required (below)"
             },
             "required": []
         },
@@ -34,7 +30,6 @@
             "$id": "#/properties/s_section",
             "type": "object",
             "properties": {
-                "$comment": "supplementary properties here; list mandatory ones as required (below)"
             },
             "required": []
         },
@@ -42,11 +37,9 @@
             "$id": "#/properties/t_section",
             "type": "object",
             "properties": {
-                "$comment": "tertiary properties here; list mandatory ones as required (below)"
             },
             "required": []
-        },
-        "$comment": " ... further optional sections of the schema can appear here ... "
+        }
     },
     "required": [
         "id",

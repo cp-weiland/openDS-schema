@@ -10,9 +10,7 @@
         },
         "typeName": {
             "type": "string",
-            "const": [
-                "ODStype1802"
-            ]
+            "const": "ODStype1802"
         },
         "authoritative": {
             "$id": "#/properties/a_section",

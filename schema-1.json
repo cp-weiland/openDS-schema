@@ -10,19 +10,15 @@
         },
         "typeName": {
             "type": "string",
-            "const": [
-                "ODStype1802"
-            ]
+            "const": "ODStype1802"
         },
         "authoritative": {
             "$id": "#/properties/a_section",
             "type": "object",
             "properties": {
-                "$comment": "authoritative properties here; list mandatory ones as required (below)"
             },
             "required": []
-        },
-        "$comment": " ... several more optional sections of the schema appear here, see below ... "
+        }
     },
     "required": [
         "id",
