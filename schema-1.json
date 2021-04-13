@@ -1,0 +1,32 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://nsidr.org/schemas/opendsschema.json",
+    "description": "v0.4, 22 February 2021. JSON schema for an open Digital Specimen.",
+    "type": "object",
+    "title": "ODStype1802",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "typeName": {
+            "type": "string",
+            "const": [
+                "ODStype1802"
+            ]
+        },
+        "authoritative": {
+            "$id": "#/properties/a_section",
+            "type": "object",
+            "properties": {
+                "$comment": "authoritative properties here; list mandatory ones as required (below)"
+            },
+            "required": []
+        },
+        "$comment": " ... several more optional sections of the schema appear here, see below ... "
+    },
+    "required": [
+        "id",
+        "typeName",
+        "authoritative"
+    ]
+}

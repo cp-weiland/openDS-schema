@@ -1,0 +1,74 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://nsidr.org/schemas/opendsschema.json",
+    "description": "v0.4, 22 February 2021. JSON schema for an open Digital Specimen.",
+    "type": "object",
+    "title": "ODStype1802",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "typeName": {
+            "type": "string",
+            "const": [
+                "ODStype1802"
+            ]
+        },
+        "authoritative": {
+            "$id": "#/properties/a_section",
+            "type": "object",
+            "properties": {
+                "modified": {
+                    "type": "string",
+                    "title": "Modified (date:time)",
+                    "format": "date-time"
+                },
+                "midsLevel": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 3
+                },
+                "physicalSpecimenId": {
+                    "type": "string",
+                    "title": "Physical specimen identifier"
+                },
+                "institution": {
+                    "type": "array",
+                    "items": [
+                        {
+                            "type": "string",
+                            "title": "Code (GRSciColl)"
+                        },
+                        {
+                            "type": "string",
+                            "format": "uri",
+                            "title": "Referent"
+                        }
+                    ]
+                },
+                "materialType": {
+                    "type": "string",
+                    "title": "Material type"
+                },
+                "name": {
+                    "type": "string",
+                    "maxLength": 128,
+                    "title": "Name"
+                }
+            },
+            "required": [
+                "modified",
+                "midsLevel",
+                "physicalSpecimenId",
+                "institution",
+                "materialType",
+                "name"
+            ]
+        }
+    },
+    "required": [
+        "id",
+        "typeName",
+        "authoritative"
+    ]
+}

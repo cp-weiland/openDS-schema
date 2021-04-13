@@ -1,0 +1,56 @@
+{
+    "$schema": "http://json-schema.org/draft/2019-09/schema#",
+    "$id": "https://nsidr.org/schemas/opendsschema.json",
+    "description": "v0.4, 22 February 2021. JSON schema for an open Digital Specimen.",
+    "type": "object",
+    "title": "ODStype1802",
+    "properties": {
+        "id": {
+            "type": "string"
+        },
+        "typeName": {
+            "type": "string",
+            "const": [
+                "ODStype1802"
+            ]
+        },
+        "authoritative": {
+            "$id": "#/properties/a_section",
+            "type": "object",
+            "properties": {
+                "$comment": "authoritative properties here; list mandatory ones as required (below)"
+            },
+            "required": []
+        },
+        "images": {
+            "$id": "#/properties/i_section",
+            "type": "object",
+            "properties": {
+                "$comment": "image properties here; list mandatory ones as required (below)"
+            },
+            "required": []
+        },
+        "supplementary": {
+            "$id": "#/properties/s_section",
+            "type": "object",
+            "properties": {
+                "$comment": "supplementary properties here; list mandatory ones as required (below)"
+            },
+            "required": []
+        },
+        "tertiary": {
+            "$id": "#/properties/t_section",
+            "type": "object",
+            "properties": {
+                "$comment": "tertiary properties here; list mandatory ones as required (below)"
+            },
+            "required": []
+        },
+        "$comment": " ... further optional sections of the schema can appear here ... "
+    },
+    "required": [
+        "id",
+        "typeName",
+        "authoritative"
+    ]
+}
