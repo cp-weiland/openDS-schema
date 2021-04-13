@@ -8,8 +8,7 @@ jsonschema -i example-1.json schema-1.json
 
 Or the provided wrapper:
 
-jsonval.py example-1.json schema-2.json 
-Valid!
+jsonval.py example-1.json schema-2.json\Valid!
 
 
 
