@@ -1,0 +1,27 @@
+{
+    "id": "20.5000.1025/SeSam-452904",
+    "typeName": "ODStype1802",
+    "authoritative": {
+        "modified": "2021-05-02T14:16:25.136954",
+        "midsLevel": 1,
+        "physicalSpecimenId": "https://id.senckenberg.de/object/SeSam-452904",
+        "institution": [
+            "FR",
+            "https://ror.org/00xmqmx64"
+        ],
+        "materialType": "Alcohol",
+        "name": "Deroceras reticulatum (O. F. Müller, 1774)"
+    },
+    "images": {
+	"img":[
+	    {
+		"src": "https://search.senckenberg.de/viewer/?id=sesam-96-19033.jpg",
+		"format": "image/jpeg"
+	    },
+	    {
+		"src": "https://search.senckenberg.de/viewer/?id=sesam-96-19032.jpg",
+		"format": "image/jpeg"
+	    }
+	]
+    }
+}
